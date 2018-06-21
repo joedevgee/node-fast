@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/devilbags/node-fast.git",
-  "author": "qliu <qliu@jcp.com>",
+  "author": "Joey Liu <liuqiaowei512@gmail.com>",
   "scripts": {
     "start": "nodemon index",
     "test": "jest",
