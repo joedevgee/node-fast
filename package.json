@@ -2,6 +2,8 @@
   "name": "node-fast",
   "version": "1.0.0",
   "main": "index.js",
+  "license": "MIT",
+  "description": "Another node backend based on Fastify + Swagger + MongoDB",
   "repository": "https://github.com/devilbags/node-fast.git",
   "author": "Joey Liu <liuqiaowei512@gmail.com>",
   "scripts": {
@@ -31,7 +33,6 @@
       "!**/src/database/**"
     ]
   },
-  "license": "MIT",
   "dependencies": {
     "fastify": "^1.6.0",
     "fastify-mongodb": "^0.7.1",
