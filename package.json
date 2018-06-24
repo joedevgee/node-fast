@@ -8,7 +8,9 @@
   "author": "Joey Liu <liuqiaowei512@gmail.com>",
   "scripts": {
     "start": "nodemon index",
+    "debug": "nodemon --inspect index",
     "test": "jest",
+    "test:watch": "jest --watch",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "precommit": "lint-staged"
   },

@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 /**
- * Product Schema
+ * Store Schema
  */
 
 const storeSchema = new mongoose.Schema({

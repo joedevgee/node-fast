@@ -3,6 +3,7 @@ const fastify = require("fastify")({
 });
 
 const storeRoute = require("./src/api/store/store.route");
+const productRoute = require("./src/api/product/product.route");
 
 // Register for OPEN API spec
 fastify.register(require("fastify-swagger"), {
@@ -22,8 +23,13 @@ fastify.register(storeRoute, {
   prefix: "/store"
 });
 
+fastify.register(productRoute, {
+  prefix: "/product"
+});
+
 fastify.ready(err => {
   if (err) throw err;
+  fastify.log.info("Starting Swagger docs");
   fastify.swagger();
 });
 

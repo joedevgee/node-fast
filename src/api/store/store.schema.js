@@ -10,11 +10,14 @@ const listSchema = {
         items: {
           type: "object",
           properties: {
-            _id: { type: "string" },
-            name: { type: "string" },
-            createdAt: { type: "string", format: "date-time" },
-            website: { type: "string" },
-            __v: { type: "number" }
+            _id: { type: "string", description: "The MongoDB object id" },
+            name: { type: "string", description: "The name of the store" },
+            createdAt: {
+              type: "string",
+              format: "date-time",
+              description: "Time when created the store"
+            },
+            website: { type: "string", description: "The store website" }
           }
         }
       }
@@ -55,8 +58,7 @@ const createSchema = {
           _id: { type: "string" },
           name: { type: "string" },
           createdAt: { type: "string", format: "date-time" },
-          website: { type: "string" },
-          __v: { type: "number" }
+          website: { type: "string" }
         }
       }
     }

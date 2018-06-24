@@ -27,3 +27,18 @@ yarn start
 ```sh
 yarn test
 ```
+
+## To debug in VSCODE
+
+- Start app in debug mode with Nodemon
+
+```sh
+yarn debug
+```
+
+- Place breakpoint
+- Hit REST with curl, e.g.
+
+```sh
+curl localhost:3000/product
+```
